@@ -25,10 +25,10 @@
 
 default: all
 
-include ../../SuiteSparse_config/SuiteSparse_config.mk
+include ../../SuiteSparse/SuiteSparse_config/SuiteSparse_config.mk
 include ../ssparse_config.mk
 
-I = -I../../SuiteSparse_config -I../include -I$(INSTALL_INCLUDE)
+I = -I../../SuiteSparse/SuiteSparse_config -I ../../SuiteSparse/CXSparse/Include -I../include -I$(INSTALL_INCLUDE)
 
 all: libssparse.a
 

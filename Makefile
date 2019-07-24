@@ -33,7 +33,7 @@ include ssparse_config.mk
 
 default: C
 
-include ../SuiteSparse_config/SuiteSparse_config.mk
+include ../SuiteSparse/SuiteSparse_config/SuiteSparse_config.mk
 
 C:
 	( cd lib ; $(MAKE) )
